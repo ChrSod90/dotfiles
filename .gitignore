@@ -4,7 +4,7 @@ eshell
 init.el~
 init.org~
 recentf
-backups
+*backups
 elpa
 ido.last
 init.elc
