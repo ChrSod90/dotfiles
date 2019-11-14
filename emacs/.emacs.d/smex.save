@@ -1,17 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ package-list-packages
  eval-buffer
  package-autoremove
  cd
  5x5
  arp
  dbx
- dig
 )
 
 ;; ----- smex-data -----
 (
  (package-autoremove . 1)
  (eval-buffer . 1)
+ (package-list-packages . 1)
 )
