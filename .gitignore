@@ -12,7 +12,7 @@ url
 /projectile-bookmarks.eld
 /projectile.cache
 smex-items
-smex.save
+*smex.save
 tmp
 request
 .mc-lists.el
