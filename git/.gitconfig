@@ -3,3 +3,5 @@
 	name = Christoffer Söderström
   username = ChrSod90
   
+[push]
+	default = simple
