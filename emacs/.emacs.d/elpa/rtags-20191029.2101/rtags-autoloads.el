@@ -1,10 +1,11 @@
 ;;; rtags-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "rtags" "rtags.el" (24012 19384 598807 459000))
-;;; Generated autoloads from rtags.el
+;;;### (autoloads nil "rtags" "../../../../../.emacs.d/elpa/rtags-20191029.2101/rtags.el"
+;;;;;;  "e1e71ce231925a76d80d5aceddbde55a")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/rtags-20191029.2101/rtags.el
 
 (autoload 'rtags-set-periodic-reparse-timeout "rtags" "\
 Set `rtags-periodic-reparse-timeout' to TIME.
@@ -523,6 +524,12 @@ Comment will be inserted before current line. It uses yasnippet to let
 the user enter missing field manually.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/rtags-20191029.2101/rtags-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/rtags-20191029.2101/rtags.el")
+;;;;;;  (24012 46068 154748 669000))
 
 ;;;***
 
