@@ -6,6 +6,8 @@ init.org~
 recentf
 *backups
 ido.last
+elpa
+melpa
 init.elc
 url
 /init.tex
