@@ -2,16 +2,16 @@
 ;; ----- smex-history -----
 (
  eval-buffer
- package-autoremove
  cd
  5x5
  arp
  dbx
  dig
+ erc
 )
 
 ;; ----- smex-data -----
 (
  (package-autoremove . 1)
- (eval-buffer . 1)
+ (eval-buffer . 2)
 )

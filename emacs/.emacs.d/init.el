@@ -11,7 +11,7 @@
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 
 (package-initialize)
-
+(package-install 'use-package)
 ;; Helper functions for setup
 (defun tw/apply-all (state things)
   (mapc (lambda (fn) (apply fn state)) things))
@@ -102,13 +102,15 @@
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-irony))
 
-(use-package flycheck-rtags)
+(use-package flycheck-rtags
+  :ensure t)
 
 ;; Highlight dangerous C functions
 (add-hook 'c-mode-hook (lambda () (font-lock-add-keywords nil '(("\\<\\(malloc\\|calloc\\|free\\|realloc\\)\\>" . font-lock-warning-face)))))
 
 ;; Misc programming settings
-(use-package yasnippet)
+(use-package yasnippet
+  :ensure t)
 
 (use-package yankpad
   :ensure t
@@ -234,6 +236,7 @@
 
 ;; Nice fuzzy matching for M-x
 (use-package smex
+  :ensure t
   :config
   (progn
     (setq smex-save-file "~/.emacs.d/smex.save")
@@ -242,7 +245,8 @@
     (smex-initialize)))
 
 ;; Show regexps live in the buffer
-(use-package visual-regexp)
+(use-package visual-regexp
+  :ensure t)
 
 ;; Setup imenu
 (use-package idomenu
@@ -280,6 +284,7 @@
         ido-max-prospects 10))
 
 (use-package ido-vertical-mode
+  :ensure t
   :config
   (ido-vertical-mode))
 
@@ -310,11 +315,13 @@
    ("M-S-<down>" . move-text-down)))
 
 (use-package projectile
+  :ensure t
   :diminish projectile-mode
   :config
   (projectile-global-mode))
 
 (use-package meghanada
+  :ensure t
   :diminish meghanada-mode "MH"
   :config
   (add-hook 'java-mode-hook
@@ -380,8 +387,9 @@
 ;; ********************************************************
 ;; PDF Tools
 ;; ********************************************************
-;; (pdf-tools-install)
+;(pdf-tools-install)
 (use-package pdf-tools
+  :ensure t
   :pin manual ;; manually update
   :config
   ;; open pdfs scaled to fit page
