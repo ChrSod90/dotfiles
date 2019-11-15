@@ -20,7 +20,7 @@ stow zsh # ...and whatever else you want
   * Try [Sublime-Jekyll](https://github.com/23maverick23/sublime-jekyll)
 * Custom Todo script
   * show in MOTD
-  * Sync with google/business calender (might be too hassle)
+  * Sync with google/business calender (might be too much of a hassle)
 * Create setup.sh
   * Install packages if needed
   * Save existing dotfiles (not found in previous git history?) to backup
