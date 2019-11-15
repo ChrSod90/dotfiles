@@ -28,7 +28,7 @@
    ;menu-bar-mode   ;; no menu bar
    blink-cursor-mode ;; don't blink cursor
    ))
-
+(toggle-frame-maximized)
 ;; Customise fringe size
 (when (not (equal (window-system) nil))
   (fringe-mode (cons 16 8)))
@@ -61,9 +61,9 @@
         uniquify-ignore-buffers-re      "^\\*"))
 
 ;; ;; Set up emacs packages
-;; (setq package-archives '(("gnu"       . "http://elpa.gnu.org/packages/")
-;;                          ("marmalade" . "http://marmalade-repo.org/packages/")
-;;                          ("melpa"     . "http://melpa.milkbox.net/packages/")))
+ (setq package-archives '(("gnu"       . "http://elpa.gnu.org/packages/")
+                          ("marmalade" . "http://marmalade-repo.org/packages/")
+                          ("melpa"     . "http://melpa.milkbox.net/packages/")))
 
 
 ;; Don't save customized settings in this file
@@ -208,6 +208,9 @@
 (global-set-key (kbd "M-p") 'highlight-symbol-query-replace)
 
 (global-set-key (kbd "§") 'tw/goto-matching-paren-or-insert)
+
+;; Undo with ctrl + _
+(global-set-key (kbd "C-_") 'undo)
 
 ;; ********************************************************
 ;; hooks
@@ -387,25 +390,23 @@
 ;; ********************************************************
 ;; PDF Tools
 ;; ********************************************************
-;(pdf-tools-install)
-(use-package pdf-tools
-  :ensure t
-  :pin manual ;; manually update
-  :config
-  ;; open pdfs scaled to fit page
-  (setq-default pdf-view-display-size 'fit-page)
-  ;; automatically annotate highlights
-  (setq pdf-annot-activate-created-annotations t)
-  ;; use normal isearch
-  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
-  ;; more fine-grained zooming
-  (setq pdf-view-resize-factor 1.1)
-  ;; keyboard shortcuts
-  (define-key pdf-view-mode-map (kbd "h") 'pdf-annot-add-highlight-markup-annotation)
-  (define-key pdf-view-mode-map (kbd "t") 'pdf-annot-add-text-annotation)
-  (define-key pdf-view-mode-map (kbd "D") 'pdf-annot-delete)
-  (define-key pdf-view-mode-map (kbd "M-g b") 'pdf-view-first-page)
-  (define-key pdf-view-mode-map (kbd "M-g e") 'pdf-view-last-page))
+;(use-package pdf-tools
+; :pin manual ;; manually update
+;  :config
+;  ;; open pdfs scaled to fit page
+;  (setq-default pdf-view-display-size 'fit-page)
+;  ;; automatically annotate highlights
+;  (setq pdf-annot-activate-created-annotations t)
+;  ;; use normal isearch
+;  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
+;  ;; more fine-grained zooming
+;  (setq pdf-view-resize-factor 1.1)
+;  ;; keyboard shortcuts
+;  (define-key pdf-view-mode-map (kbd "h") 'pdf-annot-add-highlight-markup-annotation)
+;  (define-key pdf-view-mode-map (kbd "t") 'pdf-annot-add-text-annotation)
+;  (define-key pdf-view-mode-map (kbd "D") 'pdf-annot-delete)
+;  (define-key pdf-view-mode-map (kbd "M-g b") 'pdf-view-first-page)
+;  (define-key pdf-view-mode-map (kbd "M-g e") 'pdf-view-last-page))
 
 ;; ********************************************************
 ;; Various definitions
