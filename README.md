@@ -9,7 +9,7 @@ Personal config. If you got suggestions I'll gladly take 'em.
 # Usage
 Use [stow](https://www.gnu.org/software/stow/) to manage my dotfiles
 ```
-git clone https://github.com/aeolyus/dotfiles.git ~/dotfiles
+git clone https://github.com/chrsod90/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow zsh # ...and whatever else you want
 ```
