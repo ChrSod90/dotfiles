@@ -1,1 +1,1 @@
-("~/dotfiles/" "~/IOOPM2019/" "~/DevLinuxKurs/" "~/.oh-my-zsh/")
+("~/dotfiles/" "~/.oh-my-zsh/")
