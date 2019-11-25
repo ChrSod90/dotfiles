@@ -71,9 +71,11 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
     git
     aws
+    alias-finder
     common-aliases
     command-not-found
     thefuck
+    themes
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,3 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="emacs ~/.zshrc"
 alias ohmyzsh="emacs ~/.oh-my-zsh"
+
+
+cd ~/dotfiles; 
+if [[ -n $(git status --porcelain) ]]; then echo " $fg[white]$bg[black]You have uncommitted changes to your dotfiles$reset_color"; fi
+cd
