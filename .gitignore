@@ -11,8 +11,8 @@ melpa
 init.elc
 url
 /init.tex
-*/projectile-bookmarks.eld
-*/projectile.cache
+*projectile-bookmarks.eld
+*projectile.cache
 smex-items
 *smex.save
 tmp
