@@ -333,6 +333,8 @@
               (meghanada-mode t)
               (flycheck-mode t)
               (add-hook 'before-save-hook 'delete-trailing-whitespace))))
+;; Krippe add : shellcheck
+(add-hook 'sh-mode-hook 'flycheck-mode)
 
 
 ;; ********************************************************
