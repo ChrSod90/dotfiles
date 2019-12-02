@@ -1,0 +1,9 @@
+1] Create a better TODO-script
+	- Sync with phone (BC2 or Gcal?)
+	- Add alias for adding TODOs in terminal
+	- Implement Functionality for:
+		-Tags
+		-Priority
+		-Sorting
+		-Due dates
+2] Make it so this only shows once every X hour or if called

@@ -21,7 +21,7 @@ ZSH_THEME="ys"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -42,7 +42,7 @@ export UPDATE_ZSH_DAYS=6
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="emacs ~/.zshrc"
 alias ohmyzsh="emacs ~/.oh-my-zsh"
-
+alias emacsconfig="emacs ~/dotfiles/emacs/.emacs.d"
 
 # Shows message if dotfiles repo needs committing
 cd ~/dotfiles; 
@@ -113,10 +113,8 @@ if [[ -n $(git status --porcelain) ]]; then echo " $fg[white]$bg[black]You have 
 cd ~;
 
 # OS info
-echo "
-  $fg[red]$bg[black]${USER}$reset_color$fg[white] @ $fg[green]${$(hostname -fs)}$reset_color\t$fg[blue]CPU$reset_color$fg[yellow]`LC_ALL=C top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}'`%$reset_color\t$fg[blue]RAM$reset_color$fg[yellow]`free -m | awk '/Mem:/ { printf("%3.1f%%", $3/$2*100) }'` $reset_color$fg[blue]HDD$reset_color$fg[yellow]`df -h / | awk '/\// {print $(NF-1)}'`$reset_color
-    
-  $fg[red]OS$reset_color\t\t\t$fg[green]${$(uname -sm)}$reset_color
-  $fg[red]shell$reset_color\t\t\t$fg[green]$(echo $SHELL)$reset_color
-  $fg[red]dotfiles\t\t$fg[green]https://github.com/chrsod90/dotfiles$reset_color
-"
+echo "  $fg[red]$bg[black]${USER}$reset_color$fg[white] @ $fg[green]${$(hostname -fs)}$reset_color\t$fg[blue]CPU$reset_color$fg[yellow]`LC_ALL=C top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}'`%$reset_color\t$fg[blue]RAM$reset_color$fg[yellow]`free -m | awk '/Mem:/ { printf("%3.1f%%", $3/$2*100) }'` $reset_color$fg[blue]HDD$reset_color$fg[yellow]`df -h / | awk '/\// {print $(NF-1)}'`$reset_color"
+
+# Display TODO
+# TODO: make this better
+echo "$fg[green]$bg[black]$(cat ~/dotfiles/TODO/Todo.txt)";
