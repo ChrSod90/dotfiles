@@ -178,7 +178,7 @@
 (global-set-key (kbd "M-n n") 'tw/create-scratch-buffer)
 
 ;; Use hippie expand rather than dabbrevs
-(global-set-key (kbd "C--") 'dabbrev-expand)
+(global-set-key (kbd "C--") 'hippie-expand)
 
 ;; Navigation
 (global-set-key (kbd "M-g b") 'beginning-of-buffer)
@@ -379,7 +379,8 @@
 ;; Themes
 ;; --------------------------------------------------------
 (unless (equal (window-system) nil)
-  (load-theme 'wheatgrass))
+;;(load-theme 'wheatgrass))
+  (load-theme 'material t))
 
 ;; ********************************************************
 ;; org-mode settings
