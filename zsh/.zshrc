@@ -42,7 +42,7 @@ export UPDATE_ZSH_DAYS=6
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -118,3 +118,4 @@ echo "  $fg[red]$bg[black]${USER}$reset_color$fg[white] @ $fg[green]${$(hostname
 # Display TODO
 # TODO: make this better
 echo "$fg[green]$bg[black]$(cat ~/dotfiles/TODO/Todo.txt)";
+source ~/.autoenv/activate.sh
