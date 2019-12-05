@@ -6,4 +6,4 @@
 		-Priority
 		-Sorting
 		-Due dates
-2] Make it so this only shows once every X hour or if called
+2] fix zshrc behaviour (no need for neofetch on laptops)
