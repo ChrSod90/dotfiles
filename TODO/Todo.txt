@@ -1,9 +1,5 @@
-1] Create a better TODO-script
-	- Sync with phone (BC2 or Gcal?)
-	- Add alias for adding TODOs in terminal
-	- Implement Functionality for:
-		-Tags
-		-Priority
-		-Sorting
-		-Due dates
-2] fix zshrc behaviour (no need for neofetch on laptops)
+1] Komihåg: Veckans Fokus (uppdatera WB)
+2] Google-sheets template
+3] Byt password från "KrippeIsTheBestAtSecurity" till "eppirK123"
+4] Flytta todo.txt till privat repo?
+
