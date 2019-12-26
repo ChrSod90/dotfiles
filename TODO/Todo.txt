@@ -1,5 +1,4 @@
 1] Komihåg: Veckans Fokus (uppdatera WB)
-2] Google-sheets template
-3] Byt password från "KrippeIsTheBestAtSecurity" till "eppirK123"
-4] Flytta todo.txt till privat repo?
+2] Hemsida (layout)
+3] Marketplace fix
 
