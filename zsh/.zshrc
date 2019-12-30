@@ -106,7 +106,8 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="emacs ~/.zshrc"
 alias ohmyzsh="emacs ~/.oh-my-zsh"
 alias emacsconfig="emacs ~/dotfiles/emacs/.emacs.d"
-alias gsdots="(cd ~/dotfiles && git status)"
+alias dotss="(cd ~/dotfiles && git status)"
+alias todo="(nano ~/dotfiles/TODO/Todo.txt)"
 # Shows message if dotfiles repo needs committing
 cd ~/dotfiles; 
 if [[ -n $(git status --porcelain) ]]; then echo " $fg[white]$bg[black]You have uncommitted changes to your dotfiles$reset_color"; fi
