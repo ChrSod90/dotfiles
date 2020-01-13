@@ -1,13 +1,6 @@
-Plugg:
-IOOPM] 	hashmap (ez, kan ta tid)
-LinUMU]	Electrotest (ez)
----------
-LifeImprov:
-Veckorapport (v52)
-Månadsrapport (Dec) + mål/fokus 2020
----------
-Övrigt:
-low] 	Hemsida theme (custom?)
-mid] 	Ny Emacs config (komihåg: org-mode-tree fix)
-low] 	testa AI-bild transform saken https://github.com/NVlabs/stylegan2
-
+Veckans Mål:
+-----------
+-Fixa dygnsrytm
+-20m meditation/dag
+-Mikrodos-artikel utkast
+-Håll streaks!
