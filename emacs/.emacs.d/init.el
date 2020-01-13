@@ -210,7 +210,7 @@
 (global-set-key (kbd "§") 'tw/goto-matching-paren-or-insert)
 
 ;; Undo with ctrl + _
-(global-set-key (kbd "C-u") 'undo)
+(global-set-key (kbd "C-_") 'undo)
 
 ;; ********************************************************
 ;; hooks
