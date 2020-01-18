@@ -380,7 +380,7 @@
 ;; --------------------------------------------------------
 (unless (equal (window-system) nil)
 ;;(load-theme 'wheatgrass))
-  (load-theme 'material t))
+  (load-theme 'zenburn t))
 
 ;; ********************************************************
 ;; org-mode settings
