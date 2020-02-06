@@ -379,8 +379,8 @@
 ;; Themes
 ;; --------------------------------------------------------
 (unless (equal (window-system) nil)
-;;(load-theme 'wheatgrass))
-  (load-theme 'zenburn t))
+  (load-theme 'wheatgrass))
+;;  (load-theme 'zenburn t))
 
 ;; ********************************************************
 ;; org-mode settings
