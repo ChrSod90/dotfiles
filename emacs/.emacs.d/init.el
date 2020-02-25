@@ -12,6 +12,10 @@
 
 (package-initialize)
 (package-install 'use-package)
+
+(use-package which-key
+  :ensure t
+  :init)
 ;; Helper functions for setup
 (defun tw/apply-all (state things)
   (mapc (lambda (fn) (apply fn state)) things))

@@ -17,7 +17,7 @@
  '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
    (quote
-    (yasnippet-bundle flycheck-rtags ido-vertical-mode avy-flycheck pdf-tools material-theme hc-zenburn-theme projectile move-text bm avy git-gutter+ smex idomenu dired-narrow peep-dired guess-language zenburn-theme yasnippet-snippets yankpad xclip visual-regexp vimish-fold use-package meghanada mc-extras magit irony-eldoc highlight-symbol ggtags flycheck-irony company-irony-c-headers company-irony)))
+    (which-key yasnippet-bundle flycheck-rtags ido-vertical-mode avy-flycheck pdf-tools material-theme hc-zenburn-theme projectile move-text bm avy git-gutter+ smex idomenu dired-narrow peep-dired guess-language zenburn-theme yasnippet-snippets yankpad xclip visual-regexp vimish-fold use-package meghanada mc-extras magit irony-eldoc highlight-symbol ggtags flycheck-irony company-irony-c-headers company-irony)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(vc-annotate-background nil)
