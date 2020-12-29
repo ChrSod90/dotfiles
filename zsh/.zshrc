@@ -74,7 +74,6 @@ plugins=(
     alias-finder
     common-aliases
     command-not-found
-    thefuck
     themes
 )
 
